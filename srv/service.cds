@@ -1,6 +1,6 @@
 using { msdb.master as master, msdb.trans as transaction } from '../db/demo';
 
-service MyService {
+service MyService1 {
  
  entity StudentSet as projection on master.student;
  entity StandardsSet as projection on master.standards;
