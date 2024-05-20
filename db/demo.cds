@@ -1,5 +1,5 @@
 namespace msdb;
-using { msdb.commons as spiderman } from './commons';
+using { anubhav.common as spiderman } from './commons';
 using { temporal,Country,Currency, Language,managed,cuid } from '@sap/cds/common';
 
 

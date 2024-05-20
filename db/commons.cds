@@ -1,4 +1,4 @@
-namespace msdb.commons;
+namespace anubhav.common;
 using { Currency } from '@sap/cds/common';
 
 type Gender : String(1) enum {
@@ -7,14 +7,14 @@ type Gender : String(1) enum {
     undisclosed = 'U';
 };
 
-type AmountT : Decimal(10,2) @(
+type AmountT : Decimal(15,2) @(
     Semanti.amount.CurrencyCode: 'CURRENCY_code',
     sap.unit: 'CURRENCY_code'
 );
 
 aspect Amount : {
     CURRENCY: Currency;
-    GROSS_AMOUNT: AmountT @(title : 'Gross Amount');
+    GROSS_AMOUNT: AmountT ;
      NET_AMOUNT: AmountT @(title : 'Net Amount');
       TAX_AMOUNT: AmountT @(title : 'Tax Amount');
        
