@@ -86,3 +86,6 @@ http://localhost:4004/odata/v4/MyService/ReadEmployeeSrv
 ### pagination
 http://localhost:4004/v2/odata/v4/MyService/ReadEmployeeSrv
 
+### get employee data
+http://localhost:4004/v2/odata/v4/CatalogService/EmployeeSet
+Authorization: Basic ms:
